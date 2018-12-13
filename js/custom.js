@@ -1,0 +1,3 @@
+function methodOne(value) {
+    return;
+}
