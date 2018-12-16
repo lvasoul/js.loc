@@ -11,23 +11,13 @@
 <body>
     <div class="form-measure">
         <h1>Finger Measurer<span>Here you can measure the correct ring size</span></h1>
-        <div class="section"><span>1</span>First Method</div>
-        <div class="inner-wrap">
-            <p>Wrap the thread around your finger</p>
-            <label>Thread Length (mm)
-                <input type="text" id="methodone" />
-            </label>
+        <div class="section">Wrap the thread around your finger</div>
+        <div class="inner-wrap" id="m1">
+            <input type="text" id="methodone" placeholder="Thread Length (mm)" />
             <div class="button-section">
                 <input type="submit" onclick="methodOne()" />
             </div>
-        </div>
-        
-        <div class="section"><span>2</span>Second Method</div>
-        <div class="inner-wrap">
-            <label>Your Full Name <input type="text" name="field1" /></label>
-            <div class="button-section">
-                <input type="submit" onclick="methodTwo" />
-            </div>
+            <div id="result"></div>
         </div>
     </div>
     <script src="js/custom.js"></script>
