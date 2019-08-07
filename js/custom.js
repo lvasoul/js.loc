@@ -1,3 +1,22 @@
+
+
+// Expressions Matter
+let a, b, c, d = 0;
+
+function expressionMatter(a, b, c) {
+    let arr = [d = a * (b + c),
+              d = a * b * c,
+              d = a + b * c,
+              d = a + b + c,
+              d = (a + b) * c];
+    return Math.max.apply(null, arr);
+}
+// SMARTY decision
+function expressionMatter2(a, b, c) {
+  return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c));
+}
+
+
 // Century From Year
 
 // function century(year) {
@@ -14,15 +33,3 @@
 // }
 
 
-// Expressions Matter
-let a, b, c = 0;
-
-function expressionMatter(a, b, c) {
-    a * (b + c) = d
-    a * b * c = d
-    a + b * c = d
-    (a + b) * c = d
-    return // highest achievable result
-}
-
-console.log(expressionMatter(a, b, c));
